@@ -1,4 +1,4 @@
-package com.ravi.datastructures.tree.binarysearchtree;
+package com.ravi.datastructures.nonprimitive.logical.tree;
 
 import com.ravi.algorithms.tree.binarysearchtree.BalancedBinarySearchTree;
 

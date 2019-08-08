@@ -1,6 +1,6 @@
 package com.ravi.algorithms.tree.binarysearchtree;
 
-import com.ravi.datastructures.tree.binarysearchtree.Node;
+import com.ravi.datastructures.nonprimitive.logical.tree.Node;
 
 import java.util.Arrays;
 
