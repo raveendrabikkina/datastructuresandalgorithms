@@ -74,4 +74,19 @@ public class BalancedBinarySearchTree {
         postOrderTraverseBST(node.getRightNode());
         System.out.print(node.getData() + ", ");
     }
+
+
+    public String findAnElement(Node node, int elementToFind) {
+        String result = null;
+        if (node == null) {
+            return "Not Found";
+        } else if (node.getData() == elementToFind) {
+            return "Found";
+        } else if (elementToFind > node.getData()) {
+            result = findAnElement(node.getRightNode(), elementToFind);
+        } else if (elementToFind < node.getData()) {
+            result = findAnElement(node.getLeftNode(), elementToFind);
+        }
+        return result;
+    }
 }
