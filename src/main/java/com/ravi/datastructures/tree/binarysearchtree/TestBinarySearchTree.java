@@ -19,8 +19,8 @@ public class TestBinarySearchTree {
         System.out.println("\nPostOrder traversal of Binary Search Tree:");
         balancedBinarySearchTree.postOrderTraverseBST(balancedBST);
 
-        int elementToFind = 77;
+        int elementToFind = 12;
         System.out.println("\nFind " + elementToFind + " in Binary Search Tree:");
-        System.out.println(balancedBinarySearchTree.findAnElement(balancedBST, elementToFind));
+        balancedBinarySearchTree.findAnElement(balancedBST, elementToFind);
     }
 }

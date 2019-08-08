@@ -7,6 +7,7 @@ import java.util.Arrays;
 public class BalancedBinarySearchTree {
 
     public Node createBalancedBinarySearchTreeFromUnsortedArray(int[] dataArray) {
+
         System.out.println("Sorting an unsorted array...");
         Arrays.sort(dataArray);
         System.out.println("Creating Balanced Binary Search Tree...");
@@ -76,17 +77,15 @@ public class BalancedBinarySearchTree {
     }
 
 
-    public String findAnElement(Node node, int elementToFind) {
-        String result = null;
+    public void findAnElement(Node node, int elementToFind) {
         if (node == null) {
-            return "Not Found";
+            System.out.println("Not Found");
         } else if (node.getData() == elementToFind) {
-            return "Found";
+            System.out.println("Found");
         } else if (elementToFind > node.getData()) {
-            result = findAnElement(node.getRightNode(), elementToFind);
+            findAnElement(node.getRightNode(), elementToFind);
         } else if (elementToFind < node.getData()) {
-            result = findAnElement(node.getLeftNode(), elementToFind);
+            findAnElement(node.getLeftNode(), elementToFind);
         }
-        return result;
     }
 }
