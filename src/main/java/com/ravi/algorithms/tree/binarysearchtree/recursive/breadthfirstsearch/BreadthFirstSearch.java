@@ -9,8 +9,14 @@ import static java.util.Objects.nonNull;
 
 public class BreadthFirstSearch {
 
-    Queue<Node> bfsQueue = new LinkedList<>();
+    private final Queue<Node> bfsQueue = new LinkedList<>();
 
+    /**
+     * Prefer level order traversal to depth first traversal while search for an element in a binary tree.
+     * This is because we've used queue and it's faster than system stack(for pre,post and inorder traversal)
+     *
+     * @param root - Root node of binary search tree
+     */
     public void levelOrderTraversal(Node root) {
         bfsQueue.offer(root);
 
@@ -22,9 +28,7 @@ public class BreadthFirstSearch {
             if (nonNull(node.getRightNode())) {
                 bfsQueue.offer(node.getRightNode());
             }
-            if (nonNull(node)) {
-                System.out.print(node.getData() + ", ");
-            }
+            System.out.print(node.getData() + ", ");
         }
     }
 }
