@@ -29,5 +29,8 @@ public class TestBinarySearchTree {
         int elementToFind = 12;
         System.out.println("\nFind " + elementToFind + " in Binary Search Tree:");
         balancedBinarySearchTree.findAnElement(balancedBST, elementToFind);
+
+        System.out.println("\nFind " + elementToFind + " in Binary Search Tree using Breadth First Search:");
+        breadthFirstSearch.levelOrderSearch(balancedBST, elementToFind);
     }
 }
