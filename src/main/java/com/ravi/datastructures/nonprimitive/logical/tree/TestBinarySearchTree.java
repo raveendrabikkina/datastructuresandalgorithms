@@ -1,6 +1,8 @@
 package com.ravi.datastructures.nonprimitive.logical.tree;
 
-import com.ravi.algorithms.tree.binarysearchtree.BalancedBinarySearchTree;
+import com.ravi.algorithms.tree.binarysearchtree.recursive.BalancedBinarySearchTree;
+import com.ravi.algorithms.tree.binarysearchtree.recursive.breadthfirstsearch.BreadthFirstSearch;
+import com.ravi.algorithms.tree.binarysearchtree.recursive.depthfirstsearch.DepthFirstSearch;
 
 public class TestBinarySearchTree {
 
@@ -10,14 +12,19 @@ public class TestBinarySearchTree {
         BalancedBinarySearchTree balancedBinarySearchTree = new BalancedBinarySearchTree();
         Node balancedBST = balancedBinarySearchTree.createBalancedBinarySearchTreeFromUnsortedArray(numbers);
 
+        DepthFirstSearch depthFirstSearch = new DepthFirstSearch();
         System.out.println("InOrder traversal of Binary Search Tree:");
-        balancedBinarySearchTree.inOrderTraverseBST(balancedBST);
+        depthFirstSearch.inOrderTraverseBST(balancedBST);
 
         System.out.println("\nPreOrder traversal of Binary Search Tree:");
-        balancedBinarySearchTree.preOrderTraverseBST(balancedBST);
+        depthFirstSearch.preOrderTraverseBST(balancedBST);
 
         System.out.println("\nPostOrder traversal of Binary Search Tree:");
-        balancedBinarySearchTree.postOrderTraverseBST(balancedBST);
+        depthFirstSearch.postOrderTraverseBST(balancedBST);
+
+        BreadthFirstSearch breadthFirstSearch = new BreadthFirstSearch();
+        System.out.println("\nlevelOrder traversal of Binary Search Tree:");
+        breadthFirstSearch.levelOrderTraversal(balancedBST);
 
         int elementToFind = 12;
         System.out.println("\nFind " + elementToFind + " in Binary Search Tree:");
