@@ -1,4 +1,4 @@
-package com.ravi.datastructures.nonprimitive.logical.tree;
+package com.ravi.datastructures.nonprimitive.nonlinear.tree;
 
 import java.util.Objects;
 

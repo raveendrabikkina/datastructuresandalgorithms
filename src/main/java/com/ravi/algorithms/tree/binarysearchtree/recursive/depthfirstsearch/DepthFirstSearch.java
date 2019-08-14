@@ -1,6 +1,6 @@
 package com.ravi.algorithms.tree.binarysearchtree.recursive.depthfirstsearch;
 
-import com.ravi.datastructures.nonprimitive.logical.tree.Node;
+import com.ravi.datastructures.nonprimitive.nonlinear.tree.Node;
 
 public class DepthFirstSearch {
 

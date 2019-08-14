@@ -1,13 +1,16 @@
-package com.ravi.datastructures.nonprimitive.logical.tree;
+package com.ravi.datastructures.nonprimitive.nonlinear.tree;
 
 import com.ravi.algorithms.tree.binarysearchtree.recursive.BalancedBinarySearchTree;
 import com.ravi.algorithms.tree.binarysearchtree.recursive.breadthfirstsearch.BreadthFirstSearch;
 import com.ravi.algorithms.tree.binarysearchtree.recursive.depthfirstsearch.DepthFirstSearch;
 
+import java.util.TreeSet;
+
 public class TestBinarySearchTree {
 
     public static void main(String[] args) {
 
+        TreeSet treeSet;
         int[] numbers = {1, 4, 2, 7, 3, 10, 12, 6, 8, 5, 9, 11};
         BalancedBinarySearchTree balancedBinarySearchTree = new BalancedBinarySearchTree();
         Node balancedBST = balancedBinarySearchTree.createBalancedBinarySearchTreeFromUnsortedArray(numbers);
