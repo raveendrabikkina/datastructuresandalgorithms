@@ -3,22 +3,21 @@ package com.ravi.datastructures.nonprimitive.linear.stack;
 import java.util.LinkedList;
 import java.util.List;
 
-public class StackImpl<Integer> {
+public class StackImpl<T> implements Stack<T> {
 
-    List<Integer> stack = new LinkedList<>();
+    List<T> stack = new LinkedList<>();
 
-
-    public Integer push(Integer element) {
+    public T push(T element) {
         stack.add(element);
         return element;
     }
 
-    public Integer pop() {
+    public T pop() {
 
         return stack.remove(stack.size() - 1);
     }
 
-    public Integer peek() {
+    public T peek() {
         return stack.get(stack.size() - 1);
     }
 

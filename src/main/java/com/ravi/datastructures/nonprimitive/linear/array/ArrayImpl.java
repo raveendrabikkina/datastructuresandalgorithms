@@ -1,11 +1,11 @@
 package com.ravi.datastructures.nonprimitive.linear.array;
 
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
 
-public class ArrayImpl<T> implements IArray<T>{
+public class ArrayImpl<T> implements IArray<T> {
 
-    List<T> array = new LinkedList<>();
+    private List<T> array = new LinkedList<>();
 
     @Override
     public void remove(int index) {
@@ -30,5 +30,12 @@ public class ArrayImpl<T> implements IArray<T>{
     @Override
     public T get(int index) {
         return array.get(index);
+    }
+
+    @Override
+    public String toString() {
+        return "ArrayImpl{" +
+                "array=" + array +
+                '}';
     }
 }
